@@ -3,7 +3,6 @@ import React from 'react';
 import {
   Image,
   Platform,
-  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,

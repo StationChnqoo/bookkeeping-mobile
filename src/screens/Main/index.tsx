@@ -5,8 +5,8 @@ import {Image} from 'react-native';
 import HomeScreen from '../Home';
 import {useCaches} from '@src/stores';
 import My from '../My';
-import PlanScreen from '../Plan';
 import WalletScreen from '../Wallet';
+import Books from '../Books';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,12 +19,12 @@ function MainScreen() {
       icon: require('./assets/menu_home.png'),
       label: '首页',
     },
-    // {
-    //   name: 'Plan',
-    //   component: PlanScreen,
-    //   icon: require('./assets/menu_plan.png'),
-    //   label: '计划',
-    // },
+    {
+      name: 'Books',
+      component: Books,
+      icon: require('@root/assets/menu/books.png'),
+      label: '账本',
+    },
     {
       name: 'Wallet',
       component: WalletScreen,

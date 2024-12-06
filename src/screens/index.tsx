@@ -14,6 +14,7 @@ import EditStock from './EditStock';
 import Webviewer from './Webviewer';
 import GlobalIndexes from './GlobalIndexes';
 import Login from './Login';
+import Books from './Books';
 
 export type RootStacksParams = {
   App: undefined;
@@ -22,6 +23,7 @@ export type RootStacksParams = {
   Webviewer: {title: string; url: string};
   GlobalIndexes: undefined;
   Login: undefined;
+  Books: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStacksParams>();
@@ -45,6 +47,7 @@ export default function Stacks() {
         <RootStack.Screen name="Webviewer" component={Webviewer} />
         <RootStack.Screen name="GlobalIndexes" component={GlobalIndexes} />
         <RootStack.Screen name="Login" component={Login} />
+        <RootStack.Screen name="Books" component={Books} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

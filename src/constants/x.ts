@@ -145,6 +145,11 @@ const Links = {
     `https://webquotepic.eastmoney.com/GetPic.aspx?imageType=r&type=&nid=${code}`,
 };
 
+const Page = {
+  backgroundColor: '#f7f7f7',
+  paddingHorizontal: 12,
+};
+
 const COLORS = [
   {label: '粉红', value: '#ffb3a7'},
   {label: '妃色', value: '#ed5736'},
@@ -308,6 +313,7 @@ const COLORS = [
   {label: '乌金', value: '#a78e44'},
   {label: '铜绿', value: '#549688'},
 ];
+
 const x = {
   F,
   f,
@@ -324,6 +330,7 @@ const x = {
   Files,
   Colors,
   Strings,
+  Page,
 };
 
 export default x;
